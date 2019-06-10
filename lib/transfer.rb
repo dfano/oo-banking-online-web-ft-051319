@@ -8,4 +8,13 @@ class Transfer
     @status = "pending"
     @amount = amount
   end
+
+  def valid?(sender, receiver)
+    if sender.valid? == "open" && receiver.valid? == "open"
+      true
+    else
+      false
+    end
+  end
+
 end
