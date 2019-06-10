@@ -9,7 +9,7 @@ class Transfer
     @amount = amount
   end
 
-  def valid?(sender, receiver)
+  def valid?
     if sender.valid? == "open" && receiver.valid? == "open"
       true
     else
